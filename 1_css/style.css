@@ -333,13 +333,6 @@ time, address {
     
     }
 
-    .fa {
-
-
-        padding:25px;
-        margin: 35px;
-
-    }
 
     .nav-bar {
 
@@ -393,7 +386,7 @@ time, address {
 
     p {
 
-
+        font-size: 18px;
 
     }
 
@@ -453,11 +446,7 @@ time, address {
     
     }
 
-    .fa{
 
-        font-size: 35px;
-
-    }
 
     .hamburger {
 
