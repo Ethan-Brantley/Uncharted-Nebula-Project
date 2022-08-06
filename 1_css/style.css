@@ -295,6 +295,42 @@ time, address {
 
 }
 
+.border-label-1 {
+
+    border-top: 10px solid #55ACEE;
+ 
+ }
+ 
+ .border-label-2 {
+ 
+    border-top: 10px solid #FF4500;
+ }
+ 
+ .border-label-3 {
+ 
+     border-top: 10px solid rgb(101, 189, 101);
+ 
+ }
+
+.card-row {
+
+    display: block;
+    text-align: center;
+
+}
+
+.card-sm {
+
+    background-color: white;
+    color: black;
+    display: block;
+    width: 100%;
+    padding: 25px;
+    margin: 50px 0px;
+    text-align: center;
+
+}
+
 /*
  *
  * The following CSS media query governs the rendering
@@ -402,6 +438,18 @@ time, address {
 
         margin-bottom: 100px;
 
+    }
+    
+    .card-sm {
+    
+        background-color: white;
+        color: black;
+        display: inline-block;
+        width: 25%;
+        padding: 25px;
+        margin: 25px;
+        text-align: center;
+    
     }
 
 }
