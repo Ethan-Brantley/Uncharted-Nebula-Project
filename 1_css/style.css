@@ -1,0 +1,473 @@
+/*
+ *
+ * This CSS is formatted to be mobile-first and comply
+ * with current recommended standards. At the bottom
+ * of the page, you will find the corresponding media
+ * queries for desktop (>1024px) and tablet (>768px & <1023px) renderings.
+ *
+ */
+
+body {
+
+    font-size: 15px;
+    background-color: #000;
+    color: #FFF;
+    width: 100%;
+
+}
+
+#container {
+
+    min-height: 82vh;
+    width: 100%;
+
+}
+
+#header {
+
+    width: 100%;
+
+
+}
+
+#content {
+
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%);
+    position: relative;
+
+}
+
+#footer {
+
+background-color: black;
+text-align: center;
+width: 100%;
+height: 18vh;
+position: relative;
+bottom: 0px;
+
+}
+
+.fa {
+
+    text-decoration: none;
+    padding: 10px;
+    font-size: 19px;
+    margin: 10px 10px 20px 10px;
+
+}
+
+.fa-instagram {
+
+    background-color:#125688;
+    color:white;
+    text-decoration: none;
+
+}
+
+.fa-twitter {
+
+    background-color: #55ACEE;
+    color:white;
+    text-decoration: none;
+
+}
+
+.fa-coffee {
+
+    background-color:  white;
+    color: black;
+    text-decoration: none;
+
+}
+
+.fa-reddit {
+
+    background-color: #FFF;
+    color: #FF4500;
+    text-decoration: none;
+
+}
+
+#splash-img {
+
+    height: 50vh;
+    background-image: url("../3_images/splash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#splash-text {
+
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+a {
+
+    text-decoration: none;
+
+}
+
+li {
+
+    list-style:none;
+
+}
+
+.nav-bar {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    width: 50vw;
+
+}
+
+.nav-links {
+
+    width: 100%;
+    padding: 0px;
+
+}
+
+.nav-links a {
+
+    color: #FFF;
+
+}
+
+.menu {
+
+    max-height: 0px;
+    width: 100%;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+    gap: 1em;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+
+}
+
+.menu li:hover {
+
+    background-color: gray;
+    transition: 0.3s ease;
+
+}
+
+.menu li {
+
+    padding: 5px 14px;
+    border-bottom: white 1px solid;
+
+}
+
+input[type=checkbox]{
+
+    display:none;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+input[type=checkbox]:checked ~ .menu{
+
+    max-height: 300px;
+
+}
+
+.hamburger {
+
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px;
+
+}
+
+.logo {
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    border: black 1px solid;
+
+}
+
+.attention-bg {
+
+    font-size: 30px;
+    text-indent: 0%;
+    padding: 50px 0px 50px 0px;
+
+}
+
+.attention-sm {
+
+    font-size: 25px;
+    text-indent: 0%;
+    padding: 50px 0px 50px 0px;
+
+}
+
+p {
+
+    text-indent: 1.5em;
+    padding: 15px;
+
+}
+
+.collection {
+
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+.card-content {
+
+    background-color:white;
+    color: black;
+    padding: 30px;
+    margin-bottom: 50px;
+
+}
+
+.release-info {
+
+    display: block;
+
+}
+
+time, address {
+
+    display: inline-block;
+
+}
+
+.release-title {
+    
+    display: inline-block;
+
+}
+
+.label-1 {
+
+   background-color:#55ACEE;
+   padding: 15px;
+   text-indent: 0px;
+   color: black;
+
+}
+
+.label-2 {
+
+    background-color:#FF4500;
+    padding: 15px;
+    text-indent: 0px;
+    color: black;
+
+}
+
+.label-3 {
+
+    background-color:rgb(101, 189, 101);
+    padding: 15px;
+    text-indent: 0px;
+    color: black;
+
+}
+
+/*
+ *
+ * The following CSS media query governs the rendering
+ * for desktop devices.
+ *
+ */
+
+ 
+@media screen and (min-width: 1025px) {
+
+    body {
+
+        font-size: 50px;
+
+    }
+
+    #container {
+
+        min-height: 85vh;
+    
+    }
+    
+    #header {
+    
+    
+    
+    }
+    
+    #content {
+    
+    }
+    
+    #footer {
+        
+    height: 15vh;
+    position: relative;
+    bottom: 0px;
+    
+    }
+
+    .fa {
+
+        font-size: 80px;
+        padding:25px;
+        margin: 35px;
+
+    }
+
+    .nav-bar {
+
+        width: 100%;
+
+    }
+    
+    .hamburger {
+    
+        display: none;
+        user-select: none;
+    
+    }
+
+    .menu {
+
+        max-height: 600px;
+        display: flex;
+        font-size: 60px;
+        justify-content: center;
+        left: 0;
+
+    }
+
+    #splash-text {
+
+        font-size: 100px;
+
+    }
+
+    .logo {
+
+        display: none;
+
+    }
+
+    .attention-bg {
+
+        font-size: 100px;
+        text-indent: 0%;
+        padding: 50px 0px 50px 0px;
+    
+    }
+
+    .attention-sm {
+
+        font-size: 75px;
+        text-indent: 0%;
+        padding: 50px 0px 50px 0px;
+    
+    }
+
+    p {
+
+
+
+    }
+
+    .release-info {
+
+        display: block;
+        position: relative;
+        padding: 20px;
+    
+    }
+
+    .card-content {
+
+        margin-bottom: 100px;
+
+    }
+
+}
+
+/*
+ *
+ * The following CSS media query governs the rendering
+ * for tablet-sized devices.
+ *
+ */
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    body {
+
+        font-size: 25px;
+
+    }
+
+    #container {
+
+        min-height: 88vh;
+    
+    }
+    
+    #header {
+    
+    
+    
+    }
+    
+    #content {
+    
+    }
+    
+    #footer {
+    
+    width: 100%;
+    height: 12vh;
+    position: relative;
+    bottom: 0px;
+    
+    }
+
+    .fa{
+
+        font-size: 35px;
+
+    }
+
+    .hamburger {
+
+        font-size: 50px;
+        padding: 50px;
+
+    }
+    
+
+}
