@@ -50,6 +50,12 @@ bottom: 0px;
 
 }
 
+h2 {
+
+    font-size: 1.2em;
+
+}
+
 .fa {
 
     text-decoration: none;
@@ -331,6 +337,26 @@ time, address {
 
 }
 
+aside {
+
+    display: block;
+    margin: auto;
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+
+}
+
+.story-content {
+
+    background-image: url("../3_images/marble-2371776_960_720.webp");
+    padding: 50px;
+    color: black;
+
+}
+
 /*
  *
  * The following CSS media query governs the rendering
@@ -361,6 +387,21 @@ time, address {
     
     }
     
+    aside {
+
+        width: 25%;
+        margin: 50px;
+        padding: 5px;
+        float: right;
+
+    }
+
+    .story-content {
+
+        margin: 25px 100px;
+
+    }
+
     #footer {
         
     height: 15vh;
