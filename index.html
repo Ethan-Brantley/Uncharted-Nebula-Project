@@ -19,14 +19,21 @@
 
         <div id="header">
             <div id="splash-img">
-                <a href="index.html"><img src="3_images/UnchartedNebula.jpg" class="logo"></a>
                 <div id="splash-text">Uncharted Nebula</div>
             </div>
 
             <nav class="nav-bar">
+                <span onclick="openNav()" class="openBtn"><i class="fa fa-bars"></i></span>
+                <div class="overlay-content" id="nav">
+                    <span href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</span>
+                    <a href="index.html">Home</a>
+                    <a href="2_pages/about.html">About</a>
+                    <a href="2_pages/releases.html">Current Releases</a>
+                    <a href="2_pages/catalog.html">The Catalog</a>
+                </div>
+
                 <ul class="nav-links">
-                    <input type="checkbox" id="checkbox_toggle" />
-                    <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                    
                     <div class="menu">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="2_pages/about.html">About</a></li>
@@ -58,5 +65,6 @@
         <p>&copy; 2022 Uncharted Nebula</p>
     </div>
     
+    <script src="4_js/mobile_nav.js" type="text/javascript"></script>
 </body>
 </html>
