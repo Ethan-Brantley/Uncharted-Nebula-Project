@@ -218,7 +218,7 @@ input[type=checkbox]:checked ~ .menu{
 
 .overlay-content {
 
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     overflow: hidden;
     position: fixed;
     height: 100vh;
@@ -235,7 +235,7 @@ input[type=checkbox]:checked ~ .menu{
 .overlay-content a {
 
     display: block;
-    font-size: 24px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 30px;
