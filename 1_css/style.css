@@ -223,6 +223,7 @@ input[type=checkbox]:checked ~ .menu{
     position: fixed;
     height: 100vh;
     top: 0%;
+    left: 0%;
     width: 0%;
     transition:0.3s;
     text-align: center;
