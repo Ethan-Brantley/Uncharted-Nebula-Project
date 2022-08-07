@@ -407,6 +407,15 @@ aside {
 
 }
 
+.catalog-card {
+
+    background-color:white;
+    color: black;
+    padding: 30px;
+    border: black solid 1px;
+
+}
+
 /*
  *
  * The following CSS media query governs the rendering
