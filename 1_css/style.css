@@ -292,7 +292,9 @@ p {
 .collection {
 
     width: 100%;
-    margin-top: 50px;
+    padding: 50px 5vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 80px;
 
 }
 
@@ -311,6 +313,12 @@ p {
 
 }
 
+.release-overview {
+
+    color: black;
+
+}
+
 time, address {
 
     display: inline-block;
@@ -321,6 +329,8 @@ time, address {
 .release-title {
     
     display: inline-block;
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -416,6 +426,17 @@ aside {
 
 }
 
+.btn.dark{
+    background: #1b1b1b;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
 /*
  *
  * The following CSS media query governs the rendering
@@ -434,6 +455,12 @@ aside {
 
         min-height: 85vh;
     
+    }
+
+    .collection {
+
+        display: grid;
+
     }
     
     #header {
