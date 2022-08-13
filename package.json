@@ -1,15 +1,16 @@
 {
-  "name": "uncharted_nebula",
+  "name": "uncharted-nebula-project",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start":"nodemon server.js"
+    "devStart": "nodemon server.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Ethan-Brantley/Uncharted-Nebula-Project.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
@@ -17,8 +18,11 @@
   },
   "homepage": "https://github.com/Ethan-Brantley/Uncharted-Nebula-Project#readme",
   "dependencies": {
-    "express-fileupload": "^1.4.0",
-    "express.js": "^1.0.0",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "mongoose": "^6.5.2"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.19"
   }
 }

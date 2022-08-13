@@ -1,44 +1,28 @@
-const express = require('express');
-const path = require('path');
-const fileupload = require('express-fileupload');
+const express = require('express')
+const mongoose = require('mongoose')
+const articleRouter = require('./routes/articles')
+const app = express()
 
-let initial_path = path.join(__dirname, "2_pages");
+mongoose.connect('mongodb://localhost/blog')
 
-const app = express();
-app.use(express.static(initial_path));
-app.use(fileupload());
+app.set('view engine', 'ejs')
+
+app.use(express.urlencoded({ extended: false }))
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(initial_path, "releases.html"));
-});
-
-app.get('/editor', (req, res) => {
-
-    res.sendFile(path.join(initial_path, "editor.html"));
-
+    const articles = [{
+        title: 'Test Article',
+        createdAt: new Date(),
+        description: 'Test description'
+    },
+    {
+        title: 'Test Article 2',
+        createdAt: new Date(),
+        description: 'Test description 2'
+    }]
+    res.render('articles/index', { articles: articles })
 })
 
-app.post('/upload', (req, res) => {
-    let file = req.files.image;
-    let date = new Date();
-    // image name
-    let imagename = date.getDate() + date.getTime() + file.name;
-    // image upload path
-    let path = 'uploads/' + imagename;
+app.use('/articles', articleRouter)
 
-    // create upload
-    file.mv(path, (err, result) => {
-        if(err){
-            throw err;
-        } else{
-            // our image upload path
-            res.json(`uploads/${imagename}`)
-        }
-    })
-})
-
-app.listen("3000", () => {
-
-    console.log("Listening......");
-
-})
+app.listen(5000)
